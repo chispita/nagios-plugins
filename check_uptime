@@ -1,7 +1,6 @@
 # check_uptime
 # /usr/lib/nagios/plugins/check_uptime
-				     
-						      
+				     						      
 #!/bin/bash
 											     
 echo -n "OK "
