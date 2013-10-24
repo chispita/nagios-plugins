@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w
-
+#
 # Heavily based on the script from:
 # check_mem.pl Copyright (C) 2000 Dan Larsson <dl@tyfon.net>
 # heavily modified by
