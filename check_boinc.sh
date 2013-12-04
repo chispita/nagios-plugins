@@ -7,6 +7,20 @@ STATE_WARNING=1
 STATE_CRITICAL=2
 
 # Script Variable-t s
+EXPECTED_ARGS=2
+
+if [ $# -lt $EXPECTED_ARGS ]
+	then
+		echo "Boin.sh)"
+		echo
+		echo "Comprueba el funcionamiento de Boinc"
+		echo
+		echo "Utilización:"
+		echo "  $0 <directorio proyectos> <lista procesos>"
+		echo "Ejemplo: $0 /home/project/ibercivis feeder,transitioner"
+		echo
+		exit 1
+fi
 
 PROGRAM='BOINC'
 PROCESOS=$1
