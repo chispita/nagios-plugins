@@ -29,8 +29,6 @@ PROJECT_HOME=$2
    # Volcamos el contenido del estatus a un directorio temporal
 	 OUT="$(mktemp)"
 
-   sudo -u ibercivis $PROJECT_HOME/bin/status -v >> ${OUT}
-
    $PROJECT_HOME/bin/status -v >> ${OUT}
 
    if [ ! -f ${OUT} ];then
