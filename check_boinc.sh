@@ -7,7 +7,7 @@ STATE_WARNING=1
 STATE_CRITICAL=2
 
 # Script Variable-t s
-EXPECTED_ARGS=2
+EXPECTED_ARGS=1
 
 if [ $# -lt $EXPECTED_ARGS ]
 	then
@@ -16,8 +16,11 @@ if [ $# -lt $EXPECTED_ARGS ]
 		echo "Comprueba el funcionamiento de Boinc"
 		echo
 		echo "Utilización:"
-		echo "  $0 <directorio proyectos> <lista procesos>"
-		echo "Ejemplo: $0 /home/project/ibercivis feeder,transitioner"
+		echo "  $0 <directorio proyectos> para chequear BOINC"
+		echo "    Ejemplo: $0 /home/project/ibercivis"
+		echo 
+		echo "  $0 <directorio proyectos> <lista procesos> para chequear BOINC y procesos"
+		echo "    Ejemplo: $0 /home/project/ibercivis feeder,transitioner"
 		echo
 		exit 1
 fi
