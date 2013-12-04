@@ -10,7 +10,7 @@ STATE_CRITICAL=2
 
 PROGRAM='BOINC'
 PROCESOS=$1
-PROJECT_HOME='/home/ibercivis/projects/ibercivis'
+PROJECT_HOME=$2
 
    # Volcamos el contenido del estatus a un directorio temporal
 	 OUT="$(mktemp)"
