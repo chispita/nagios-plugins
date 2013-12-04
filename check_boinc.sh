@@ -23,8 +23,8 @@ if [ $# -lt $EXPECTED_ARGS ]
 fi
 
 PROGRAM='BOINC'
-PROCESOS=$1
-PROJECT_HOME=$2
+PROCESOS=$2
+PROJECT_HOME=$1
 
    # Volcamos el contenido del estatus a un directorio temporal
 	 OUT="$(mktemp)"
