@@ -32,7 +32,7 @@ PROJECT_HOME=$1
    # Volcamos el contenido del estatus a un directorio temporal
 	 OUT="$(mktemp)"
 
-   $PROJECT_HOME/bin/status -v >> ${OUT}
+	 sudo -u ibercivis $PROJECT_HOME/bin/status -v >> ${OUT}
 
    if [ ! -f ${OUT} ];then
 	     echo "Temporal File not found!"
